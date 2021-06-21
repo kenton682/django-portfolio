@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="background">
+    <div class="intro-left">
+      <div class="container-fluid full-height">
+        <div class="row text-center align-items-center full-height">
+          <div class="col">
+            <img src="{% static 'images/me.jpg' %}" alt="me" class="avatar"/>
+            <h1 class="display-4">Kenton Olsen</h1>
+            <h2 class="display-6 mb-5">Front-end developer</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8 panel-right px-0">
+
+          <section class="projects">
+            <h2 class="display-6">My projects:</h2>
+            <div class="container-fluid">
+              <div class="row gy-5">
+
+                <div class="col-md-6">
+                  <div class="card text center">
+                    <div class="overflow">
+                      <img src="{% static 'images/netflix.jpg' %}" alt="User project" class="card-img-top" />
+                    </div>
+                    <div class = "card-body text-dark text-center">
+                      <h4 class="card-title">Netflix Clone</h4>
+                      <p class="card-text text-secondary">
+                        A copy of the netflix website that uses the IMDB api to get the movie names and images as well as filtering out genres. Built using React Js and Node Js, hosted on google firebase.
+                      </p>
+                    </div>  
+                        <div class="double-button">
+                            <a href="https://github.com/kenton682/netflix-clone" class="btn btn-outline-success">Github File</a> 
+                            <a href="https://netflix-clone-e50af.web.app/" class="btn btn-outline-success">Firebase Link</a> 
+                        </div>                        
+                  </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card text center">
+                        <div class="overflow">
+                          <img src="{% static 'images/TRVL.jpg' %}" alt="User project" class="card-img-top" />
+                        </div>
+                        <div class = "card-body text-dark text-center">
+                          <h4 class="card-title">Travel Website</h4>
+                          <p class="card-text text-secondary">
+                            A basic Travel website layout built using React Js and Node Js, hosted on google firebase.
+                          </p>
+                        </div>   
+                        <div class="double-button">
+                            <a href="https://github.com/kenton682/netflix-clone" class="btn btn-outline-success">Github File</a> 
+                            <a href="https://travel-website-109cb.web.app/" class="btn btn-outline-success">Firebase Link</a> 
+                        </div>                
+                      </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card text center">
+                    <div class="overflow">
+                      <img src="{% static 'images/tetris.png' %}" alt="User project" class="card-img-top" />
+                    </div>
+                    <div class = "card-body text-dark text-center">
+                      <h4 class="card-title">Tetris Game</h4>
+                      <p class="card-text text-secondary">
+                        A recreation of the classic game Tetris built using JavaScript, CSS, and HTML
+                      </p>
+                    </div>   
+                    <a href="https://github.com/kenton682/Tetris" class="btn btn-outline-success">Github File</a>            
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card text center">
+                        <div class="overflow">
+                          <img src="{% static 'images/snake.png' %}" alt="User project" class="card-img-top"/>
+                        </div>
+                        <div class = "card-body text-dark text-center">
+                          <h4 class="card-title">Snake Game</h4>
+                          <p class="card-text text-secondary">
+                            A recreation of the classic snake game using JavaScript, CSS, and HTML
+                          </p>
+                        </div>      
+                        <a href="https://github.com/kenton682/snake-game" class="btn btn-outline-success">Github File</a>         
+                      </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section class="about">
+            <h2 class="display-6">About Me:</h2>
+            <div class="container-fluid" id="about">
+                Ever since my first laptop I got around the age of 10 I have always enjoyed using computers, whether that was for gaming or just browsing the internet.
+                My first programming experience was probably around the age of 12 when I was modifying minecraft mod files with notepad++ to change how some of the things in the mod worked.
+                I thought it was really cool that I could add my own custom touch to the game and from this point on I new I wanted to be a programmer when I was older.
+                I ended up going to community college for 2 years with intent to transfer to a 4 year university in pursuit of a computer science degree, however
+                once I graduated I realized that I don't need a degree and that I could buy courses online and teach myself how to code.
+                After completing online courses on JavaScript React Js, and Node Js, I was ready to make some projects some of which are listed here on my site and to build a portfolio which
+                would hopefully end up getting me a job.
+            </div>
+          </section>
+
+          <section class="contact">
+            <h2 class="display-6 mb-5">Contact me:</h2>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <div class='card card-body' id="contact">
+                        Email: kenton682@gmail.com
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <div class='card card-body' id="contact">
+                        Phone number: 360-525-7542
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">            
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
