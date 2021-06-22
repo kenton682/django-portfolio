@@ -32,74 +32,23 @@
             <div class="container-fluid">
               <div class="row gy-5">
 
+                {% for card in cards %}
                 <div class="col-md-6">
                   <div class="card text center">
                     <div class="overflow">
-                      <img src="{% static 'images/netflix.jpg' %}" alt="User project" class="card-img-top" />
+                      <img src="{{card.image}}" alt={{card.image}} class="card-img-top" />
                     </div>
                     <div class = "card-body text-dark text-center">
-                      <h4 class="card-title">Netflix Clone</h4>
+                      <h4 class="card-title">{{card.title}}</h4>
                       <p class="card-text text-secondary">
-                        A copy of the netflix website that uses the IMDB api to get the movie names and images as well as filtering out genres. Built using React Js and Node Js, hosted on google firebase.
+                        {{card.content}}
                       </p>
                     </div>  
-                        <div class="double-button">
-                            <a href="https://github.com/kenton682/netflix-clone" class="btn btn-outline-success">Github File</a> 
-                            <a href="https://netflix-clone-e50af.web.app/" class="btn btn-outline-success">Firebase Link</a> 
-                        </div>                        
+                            <a href={{card.image}} class="btn btn-outline-success">Github File</a>                   
                   </div>
                 </div>
-                
-                <div class="col-md-6">
-                    <div class="card text center">
-                        <div class="overflow">
-                          <img src="{% static 'images/TRVL.jpg' %}" alt="User project" class="card-img-top" />
-                        </div>
-                        <div class = "card-body text-dark text-center">
-                          <h4 class="card-title">Travel Website</h4>
-                          <p class="card-text text-secondary">
-                            A basic Travel website layout built using React Js and Node Js, hosted on google firebase.
-                          </p>
-                        </div>   
-                        <div class="double-button">
-                            <a href="https://github.com/kenton682/netflix-clone" class="btn btn-outline-success">Github File</a> 
-                            <a href="https://travel-website-109cb.web.app/" class="btn btn-outline-success">Firebase Link</a> 
-                        </div>                
-                      </div>
-                </div>
+                {% endfor %}
 
-                <div class="col-md-6">
-                  <div class="card text center">
-                    <div class="overflow">
-                      <img src="{% static 'images/tetris.png' %}" alt="User project" class="card-img-top" />
-                    </div>
-                    <div class = "card-body text-dark text-center">
-                      <h4 class="card-title">Tetris Game</h4>
-                      <p class="card-text text-secondary">
-                        A recreation of the classic game Tetris built using JavaScript, CSS, and HTML
-                      </p>
-                    </div>   
-                    <a href="https://github.com/kenton682/Tetris" class="btn btn-outline-success">Github File</a>            
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="card text center">
-                        <div class="overflow">
-                          <img src="{% static 'images/snake.png' %}" alt="User project" class="card-img-top"/>
-                        </div>
-                        <div class = "card-body text-dark text-center">
-                          <h4 class="card-title">Snake Game</h4>
-                          <p class="card-text text-secondary">
-                            A recreation of the classic snake game using JavaScript, CSS, and HTML
-                          </p>
-                        </div>      
-                        <a href="https://github.com/kenton682/snake-game" class="btn btn-outline-success">Github File</a>         
-                      </div>
-                </div>
-
-              </div>
-            </div>
           </section>
 
           <section class="about">
